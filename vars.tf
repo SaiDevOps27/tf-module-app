@@ -15,4 +15,6 @@ variable "alb_dns_name" {}
 variable "listener_priority" {}
 variable "listener_arn" {}
 variable "parameters" {}
+variable "monitoring_nodes" {}
+
 
