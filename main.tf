@@ -114,6 +114,7 @@ resource "aws_lb_target_group" "main" {
     path = "/health"
 
   }
+  deregistration_delay = 30
   tags = merge(
     var.tags,
     { Name = "${var.component}-${var.env}"}
